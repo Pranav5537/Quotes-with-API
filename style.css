@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+  body {
+    height: 97px;
+    max-width: 7000px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    transition: 10s;
+    background-image: url(pexels-pixabay-326311.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+/* awesome Quotes */
+  h1 {
+    color: yellow;
+    background-color: black;
+    text-align: center;
+    border-radius: 50px;
+    font-style: oblique;
+    margin: 71px;
+    margin-top: 50px;
+}
+/* black box */
+  div {
+    width: 100px;
+    height: 100px;
+    background: black;
+    transition: width 2s;
+    padding: 70px;
+  }
+  .container {
+    display: block;
+    width: 90%;
+    height: 57vh;
+    /* max-height: auto; */
+    padding: 30px;
+    margin: 30px;
+    transition: 0.5s;
+  }
+  /*Quote  */
+  p {
+    color: chartreuse;
+    transition: 0.2s;
+    margin-bottom: 25px;
+    font-size: 30px;
+    border-radius: 77px;
+    font-style: italic;
+  }
+ 
+
+  .quote {
+    text-align: left;
+  }
+  .author {
+    text-align: right;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  /*button  */
+  button {
+    display: block;
+    margin: 10px;
+    border-radius: 90px 150px;
+    background-color: blue;
+    transition: width 2s;
+  }
+
+  button:hover{
+    width: 300px;
+    color: whitesmoke;
+  }
+   
+  button:hover::after {
+    content:' here for next !';
+  } 
+  button:hover::before {
+    content:' Please ';
+  } 
