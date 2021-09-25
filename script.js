@@ -19,10 +19,14 @@ function quotes(){
 //ceating p with javascript
     let p1=document.getElementById("one")
     let p2=document.getElementById("two")
+    
 //injectiong quotes in para
     p1.innerText=data.quote.body
     p2.innerText=data.quote.author
-    }
-       
+    }   
     )
+
+// in case of any error occurs
+    .catch((err)=>
+    console.log(err,"unable to fetch data")) 
 }
